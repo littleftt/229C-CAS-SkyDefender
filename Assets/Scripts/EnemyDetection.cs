@@ -9,7 +9,7 @@ public class EnemyDetection : MonoBehaviour
         if (collision.collider.CompareTag(targetTag))
         {
             Time.timeScale = 0;
-            //Application.Quit();
+            
         }
     }
 }
