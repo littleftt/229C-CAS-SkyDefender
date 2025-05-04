@@ -4,6 +4,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] string targetTag;
     [SerializeField] float lifetime;
+    
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.collider.CompareTag(targetTag))
         {
+            ScoreManager.instance.AddPoint();
             Destroy(collision.gameObject); 
             Destroy(gameObject);           
         }
