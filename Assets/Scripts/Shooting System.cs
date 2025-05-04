@@ -28,7 +28,7 @@ public class Projectile2D : MonoBehaviour
 
             if (hit.collider != null)
             {
-                crossHair.transform.position = new Vector2(hit.point.x, hit.point.y);
+                //crossHair.transform.position = new Vector2(hit.point.x, hit.point.y);
 
                 Vector2 projectileVelocity = CalculateProjectileVelocity(FirePoint.position, hit.point, 1f);
 
