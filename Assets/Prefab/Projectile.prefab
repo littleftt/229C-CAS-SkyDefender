@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Enemy
+  lifetime: 3
 --- !u!50 &6554963663127846802
 Rigidbody2D:
   serializedVersion: 5
